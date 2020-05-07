@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow-x: hidden;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+#fixebg {
+    background: url("snake.jpg") 50% 50% no-repeat;
+    background-size: cover !important;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.tactil-devices {
+    display: none;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2, p {
+    text-align: center; 
+    font-family: 'Bangers', cursive; 
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.buttons-container {
+    margin: 30px auto;
+}
+
+button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    margin: 15px;
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+button.active, button:hover {
+    opacity: 1;
+}
+
+.easy {
+    background-color: green;
+}
+
+.medium {
+    background-color: orange;
+}
+
+.hard {
+    background-color: red;
+}
+
+.start {
+    color: white;
+    background-color: #2f89fc;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+.start:hover {
+    transform: scale(1.5);
+}
+
+.start:disabled {
+    display: none;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+}
+
+div {
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+@media screen and (max-width: 1920px) {
+    h1 {
+        font-size: 55px ;
+    }
+
+    .buttons-container {
+        margin: 0px auto;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    h1 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .buttons-container {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+/* Pour les appareils tactiles */
+@media (pointer: coarse) and (hover: none) {
+    .main {
+        display: none;
+    }
+
+    .tactil-devices {
+        display: flex;
+    }
+}

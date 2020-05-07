@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Jeu du Serpent</title>
+    </head>
+    
+    <body>
+        <div id="fixebg"></div>
+
+        <div class="tactil-devices">
+            <h1>Attention <span class="red">!!!</span></h1>
+            <p>Vous utilisez un périphérique tactile.</p> 
+            <p>Par conséquent, ce jeu n'est pas disponible car il ne fonctionne que sur PC.</p>
+            <p>Merci de votre compréhension.</p>
+        </div>
+
+        <div class="main">
+            <h1>Jeu du <span class="red">Serpent</span></h1>
+    
+            <div class="buttons-container">
+                <button type="button" class="difficulty easy">Facile</button>
+                <button type="button" class="difficulty medium active">Moyen</button>
+                <button type="button" class="difficulty hard">Difficile</button>
+                <br>
+                <button type="button" class="start">Commencer !</button>
+            </div>
+    
+            <section id="canvasSection"></section>
+    
+            <h2>Meilleur Score : <span class="red" id="high-score">0</span></h2>
+            <p>Pour mettre le jeu en <span class="red">pause</span>, appuyez sur la touche <span class="red">P</span> de votre clavier.</p>
+            <p>Pour conserver votre meilleur score, veuillez vérifier dans vos paramètres de confidentialité que les données de sites sont autorisées.</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
