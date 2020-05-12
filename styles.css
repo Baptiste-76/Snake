@@ -18,7 +18,7 @@ body {
 }
 
 #fixebg {
-    background: url("snake.jpg") 50% 50% no-repeat;
+    background: url("ressources/snake.jpg") 50% 50% no-repeat;
     background-size: cover !important;
     height: 100%;
     width: 100%;
